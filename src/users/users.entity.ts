@@ -3,11 +3,11 @@ import { Role } from 'src/roles/roles.entity';
 import {
   Column,
   Entity,
+  JoinTable,
   ManyToMany,
   ManyToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { JoinTable } from 'typeorm/browser';
 
 @Entity()
 export class User {
